@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="./CSS/style.css">
 <?php
+    error_reporting(0);
     $frase=$_POST['frase'];
     $vocalesstring="aeiouAEIOU";
     echo "La frase introducida es ".$frase. "<br>";
