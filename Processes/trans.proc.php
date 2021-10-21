@@ -1,7 +1,7 @@
 <?php
     $frase=$_POST['frase'];
     $vocalesstring="aeiouAEIOU";
-    echo $frase. "<br>";
+    echo "La frase introducida es ".$frase. "<br>";
 
     $frasefinal= "";
     $stringcons="";
