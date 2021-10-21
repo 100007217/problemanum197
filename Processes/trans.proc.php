@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="./CSS/style.css">
 <?php
-    error_reporting(0);
-    $frase=$_POST['frase'];
+
+    //Recogemos variable que nos pase el Sr. Afredo Blum
+    $frasealfredo="Pasame algo Alfredo Blum";
+    
+    
     $vocalesstring="aeiouAEIOU";
     echo "La frase introducida es ".$frase. "<br>";
 
@@ -12,8 +15,6 @@
     $vocales = str_split($vocalesstring);
     $numcaracteres = strlen($frase);
     echo "Numero de caracteres es ".$numcaracteres. "<br></br>";
-
-
 
     $contadorcons=0;
     for ($i=0; $i < $numcaracteres; $i++){ 
@@ -56,6 +57,6 @@
         $strinconsreversed=strrev($stringcons);
         $frasefinal=$frasefinal.$strinconsreversed;
     }
-    
-    echo "<br>Frase final FINAL: ".$frasefinal."<br>";                                                                                                                                            n
+    //Print frase final
+    echo "<br>Frase final FINAL: ".$frasefinal."<br>";
 ?>
