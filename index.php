@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <form action="./Processes/trans.proc.php" method="post">
+    <form action="./Processes/trans2.proc.php" method="post">
         <input type="text" name="frase" id="">
-        <input type="submit" value="Calcular frase">
+        <input type="submit" value="Enviar frase">
     </form>
 </body>
 
