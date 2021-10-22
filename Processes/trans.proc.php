@@ -2,7 +2,7 @@
 <?php
 
     //Recogemos variable que nos pase el Sr. Afredo Blum
-    $frasealfredo="Pasame algo Alfredo Blum";
+    $frase=$finalres;
     
     
     $vocalesstring="aeiouAEIOU";
