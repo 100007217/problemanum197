@@ -1,8 +1,28 @@
 <link rel="stylesheet" href="./CSS/style.css">
 <?php
         //Recogemos variable que nos pase el Sr. Afredo Blum
-        $frase=$_POST['frase'];
-        echo "Recogemos ".$frase;
+        
+    ///ALFREDO
+    //
+    $a = $_POST['frase']; //Recogemos la variable
+    echo "x : ".$a;
+    $c = ""; //Asignamos valor 
+    $d = ""; //Asignamos valor
+
+    for ($i=0;$i < strlen($a); $i++){
+        if ($i%2==0){ //Cogemos la variable que itera y dependiendo de si es para o no hará algo
+            $c = $c.$a[$i]; //Asignamos los valores pares a $c
+        }else{
+            $d = $d.$a[$i]; //Asignamos los impares a $d
+        }
+    }
+        $dreverse = strrev($d); //$d nos devuelve el resultado pero al revés, por eso le damos la vuelta
+        $finalres = $c.$dreverse;
+        echo "<br>";
+        echo "x''->x' => ".$finalres;
+
+        // GERARD
+        $frase=$finalres;
     
         $vocalesstring="aeiouAEIOU";
         //echo "La frase introducida es ".$frase. "<br>";
@@ -57,23 +77,8 @@
             $frasefinal=$frasefinal.$strinconsreversed;
         }
         //Print frase final
-        echo "<br>Frase que deja Gerard ".$frasefinal."<br>";
+        echo "<br>";
+        echo "x'->x => ".$frasefinal;
     
-    ///ALFREDO
-    //
-    $a = $frasefinal; //Recogemos la variable
-    $c = ""; //Asignamos valor 
-    $d = ""; //Asignamos valor
-
-    for ($i=0;$i < strlen($a); $i++){
-        if ($i%2==0){ //Cogemos la variable que itera y dependiendo de si es para o no hará algo
-            $c = $c.$a[$i]; //Asignamos los valores pares a $c
-        }else{
-            $d = $d.$a[$i]; //Asignamos los impares a $d
-        }
-    }
-        $dreverse = strrev($d); //$d nos devuelve el resultado pero al revés, por eso le damos la vuelta
-        $finalres = $c.$dreverse;
-        echo $finalres;
 
 ?>
